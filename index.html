@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mafia PRODUITS - Propose des PRODUITS sécurisés et rapides.">
+  <title>MY DRUGS</title>
+  <link rel="stylesheet" href="css/style.css"> <!-- Lien vers le fichier CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome -->
+</head>
+<body>
+  <!-- En-tête avec le nom du site -->
+  <header>
+    <div class="container">
+      <h1 class="site-title">
+        <img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png" alt="Logo PRODUITS" style="height: 30px; vertical-align: middle;"> 
+        <span>MY DRUGS</span>
+      </h1>
+    </div>
+  </header>
+ 
+<!-- Section des PRODUITS -->
+<section id="products" class="products" style="text-align: center;">
+    <div class="container" style="text-align: center;">
+        <h2>Nos PRODUITS</h2>
+        <div class="product-grid" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;"></div>
+            <!-- Les produits seront affichés ici -->
+        </div>
+    </div>
+</section>
+<section id="products" class="products">
+    <div class="container">
+        <h2>Nos PRODUITS</h2>
+        <div class="product-grid">
+            <!-- Les produits seront affichés ici -->
+        </div>
+    </div>
+</section></div>
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Nos PRODUITS</h2>
+      <div class="service-grid">
+        <!-- Exemple de produit -->
+        <div class="service-card">
+          <i class="fas fa-cannabis fa-3x"></i> <!-- Icône pour le PRODUIT -->
+          <h3>Hash Canabis 🍪🍀</h3>
+          <p>1000% Mousseux 🥇🏆 By KETAMA 🇲🇦🔥</p>
+          <label for="hash-canabis-price">Choisissez une option :</label>
+          <select id="hash-canabis-price" class="price-select">
+            <option value="30€">5G - 30€</option>
+            <option value="50€">10G - 50€</option>
+            <option value="80€">15G - 80€</option>
+            <option value="110€">25G - 110€</option>
+            <option value="160€">50G - 160€</option>
+            <option value="260€">100G - 260€</option>
+            <option value="500€">200G - 500€</option>
+            <option value="1200€">500G - 1200€</option>
+            <option value="2200€">1KG - 2200€</option>
+            <option value="4000€">2KG - 4000€</option>
+          </select>
+          <button class="btn btn-secondary" onclick="showSummary('Hash Canabis 🍪🍀', '1000% Mousseux 🥇🏆 By KETAMA 🇲🇦🔥', document.getElementById('hash-canabis-price').value)">Commander</button>
+        </div>
+
+        <!-- Ajout des autres produits -->
+        <div class="service-card">
+          <i class="fas fa-smoking fa-3x"></i>
+          <h3>MARLBORO 🚬</h3>
+          <p>Duty Fruit Quality 🔝🛬</p>
+          <label for="marlboro-price">Choisissez une option :</label>
+          <select id="marlboro-price" class="price-select">
+            <option value="40€">1 cartouche - 40€</option>
+            <option value="175€">5 cartouches - 175€ (35€/u)</option>
+            <option value="300€">10 cartouches - 300€ (30€/u)</option>
+            <option value="700€">25 cartouches - 700€ (28€/u)</option>
+            <option value="1300€">50 cartouches - 1300€ (26€/u)</option>
+          </select>
+          <button class="btn btn-secondary" onclick="showSummary('MARLBORO 🚬', 'Duty Fruit Quality 🔝🛬', document.getElementById('marlboro-price').value)">Commander</button>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-snowflake fa-3x"></i>
+          <h3>❄️M 33 COCAINE (0.97)🇨🇴</h3>
+          <p>Cocaine colombienne🇨🇴 avec un taux de pureté très élevé.</p>
+          <label for="m33-cocaine-price">Choisissez une option :</label>
+          <select id="m33-cocaine-price" class="price-select">
+            <option value="50€">0.5G - 50€</option>
+            <option value="70€">1G - 70€</option>
+            <option value="130€">2G - 130€</option>
+            <option value="170€">3G - 170€</option>
+            <option value="250€">5G - 250€</option>
+            <option value="450€">10G - 450€</option>
+            <option value="800€">20G - 800€</option>
+            <option value="1900€">50G - 1900€</option>
+          </select>
+          <button class="btn btn-secondary" onclick="showSummary('❄️M 33 COCAINE (0.97)🇨🇴', 'Cocaine colombienne avec un taux de pureté très élevé.', document.getElementById('m33-cocaine-price').value)">Commander</button>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-ice-cream fa-3x"></i>
+          <h3>🧊Frozen</h3>
+          <label for="frozen-price">Choisissez une option :</label>
+          <select id="frozen-price" class="price-select">
+            <option value="120€">25G - 120€</option>
+            <option value="220€">50G - 220€</option>
+            <option value="390€">100G - 390€</option>
+            <option value="750€">200G - 750€</option>
+          </select>
+          <button class="btn btn-secondary" onclick="showSummary('🧊Frozen', '', document.getElementById('frozen-price').value)">Commander</button>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-smoking fa-3x"></i>
+            <h3>🏴‍☠️🍫FILTRÉ X3 NO FARM🍫🏴‍☠️</h3>
+            <p>🧬PEYOTTE SKITLLZ🍭🍨</p>
+            <p>🌪️ EFFET 🧘‍♂️ DÉTENDU 🗣️ LOQUACE😴 SOMNOLENCE</p>
+            <label for="marlboro-price">Choisissez une option :</label>
+            <select id="marlboro-price" class="price-select">
+              <option value="50€"> 5G - 50€</option>
+              <option value="90€">10G - 90€</option>
+              <option value="150€">25G - 150€</option>
+              <option value="370€">50G - 370€</option>
+              <option value="1300€">100G - 500€</option>
+            </select>
+            <button class="btn btn-secondary" onclick="showSummary('🏴‍☠️🍫FILTRÉ X3 NO FARM🍫🏴‍☠️', '🧬PEYOTTE SKITLLZ🍭🍨', document.getElementById('FILTRÉ X3 NO FARM-price').value)">Commander</button>
+          </div>
+
+          <div class="service-card">
+            <i class="fas fa-snowflake fa-3x"></i>
+            <h3>L.A. MOUSSE</h3>
+            <p>✅ Apple Fritter 🥧</p>
+            <p>✅ Cherry Pie 🍒</p>
+            <p>✅ Gelato 33 🍧</p>
+            <p>✅ Gelato 41 🍨</p>
+            <p>✅ Gelato Cake 🍰</p>
+            <p>✅ Jealousy 😡</p>
+            <p>✅ Ice Cream Cake 🧁</p>
+            <p>✅ Italian Ice 🍦</p>
+            <p>✅ Pink Runtz 🦩</p>
+            <p>✅ Runtz 🍭</p>
+            <p>✅ Sherbert Cake 🍰🌈</p>
+            <p>✅ Sherbet 🌈</p>
+            <p>✅ Sundae Driver 🚗</p>
+            <p>✅ Wedding Cake 🎂</p>
+            <p>✅ White Runtz 🍬</p>
+                
+            <label for="L.A. MOUSSE">Choisissez une option :</label>
+            <select id="L.A. MOUSSE" class="price-select">
+              <option value="60€">5G - 60€</option>
+              <option value="100€">10G - 100€</option>
+              <option value="150€">25G - 150€</option>
+              <option value="250€">50G - 250€</option>
+              <option value="400€">100G - 400€</option>
+              <option value="1500€">500G - 1500€</option>
+              <option value="2000€">1000G - 2000€</option>
+            </select>
+            <button class="btn btn-secondary" onclick="showSummary('L.A. MOUSSE', 'Sélection de variétés premium.', document.getElementById('L.A. MOUSSE').value)">Commander</button>
+          </div>
+
+          <div class="service-card">
+            <i class="fas fa-leaf fa-3x"></i>
+          <h3>🥇🏆- JAUNE MOUSSE 🧼 🧽 KOSHER KUSH 👩‍🌾👨‍🌾</h3>
+          <p>Une variété exceptionnelle avec des effets relaxants et apaisants.</p>
+          <label for="jaune-mousse-price">Choisissez une option :</label>
+          <select id="jaune-mousse-price" class="price-select">
+          <option value="300€">100G - 300€</option>
+          <option value="580€">200G - 580€</option>
+          <option value="830€">300G - 830€</option>
+          <option value="1100€">400G - 1100€</option>
+          <option value="1350€">500G - 1350€</option>
+          <option value="2500€">1KG - 2500€</option>
+          </select>
+          <button class="btn btn-secondary" onclick="showSummary('🥇🏆- JAUNE MOUSSE 🧼 🧽 KOSHER KUSH 👩‍🌾👨‍🌾', 'Une variété exceptionnelle avec des effets relaxants et apaisants.', document.getElementById('jaune-mousse-price').value)">Commander</button>
+      </div>
+
+    <div class="service-card">
+        <i class="fas fa-apple-alt fa-3x"></i>
+        <h3>🥇🏆- JAUNE MOUSSE 🧽 APPLE FRITTER 🤩 ❤️🤍</h3>
+        <p>Une variété exceptionnelle avec des saveurs uniques et des effets relaxants.</p>
+        <label for="jaune-mousse-apple-fritter-price">Choisissez une option :</label>
+        <select id="jaune-mousse-apple-fritter-price" class="price-select">
+            <option value="300€">100G - 300€</option>
+            <option value="580€">200G - 580€</option>
+            <option value="830€">300G - 830€</option>
+            <option value="1100€">400G - 1100€</option>
+            <option value="1350€">500G - 1350€</option>
+            <option value="2500€">1KG - 2500€</option>
+        </select>
+        <button class="btn btn-secondary" onclick="showSummary('🥇🏆- JAUNE MOUSSE 🧽 APPLE FRITTER 🤩 ❤️🤍', 'Une variété exceptionnelle avec des saveurs uniques et des effets relaxants.', document.getElementById('jaune-mousse-apple-fritter-price').value)">Commander</button>
+    </div></select></div>
+      
+    <div class="service-card">
+        <i class="fas fa-filter fa-3x"></i>
+        <h3>FILTRATO X3 120U🇲🇦🇲🇦</h3>
+        <label for="filtrato-price">Choisissez une option :</label>
+        <select id="filtrato-price" class="price-select">
+            <option value="100€">10G - 100€</option>
+            <option value="200€">25G - 200€</option>
+            <option value="300€">50G - 300€</option>
+            <option value="500€">100G - 500€</option>
+            <option value="4500€">1KG - 4500€</option>
+        </select>
+        <button class="btn btn-secondary" onclick="showSummary('FILTRATO X3 120U🇲🇦🇲🇦', '', document.getElementById('filtrato-price').value)">Commander</button>
+    </div>
+
+    <div class="service-card">
+        <i class="fas fa-leaf fa-3x"></i>
+        <h3>JAUNE MOUSSEUX STONEDAYS 🧽🫧</h3>
+        <label for="jaune-stonedays-price">Choisissez une option :</label>
+        <select id="jaune-stonedays-price" class="price-select">
+            <option value="150€">50G - 150€</option>
+            <option value="250€">100G - 250€</option>
+            <option value="400€">200G - 400€</option>
+            <option value="700€">300G - 700€</option>
+            <option value="1000€">500G - 1000€</option>
+            <option value="1650€">1KG - 1650€</option>
+        </select>
+        <button class="btn btn-secondary" onclick="showSummary('JAUNE MOUSSEUX STONEDAYS 🧽🫧', '', document.getElementById('jaune-stonedays-price').value)">Commander</button>
+    </div>
+
+    <div class="service-card">
+        <i class="fas fa-cube fa-3x"></i>
+        <h3>🍫HASH🍁 REAL-MADSHIT🍫🍁</h3>
+        <label for="real-madshit-price">Choisissez une option :</label>
+        <select id="real-madshit-price" class="price-select">
+            <option value="130€">50G - 130€</option>
+            <option value="230€">100G - 230€</option>
+            <option value="430€">200G - 430€</option>
+            <option value="900€">500G - 900€</option>
+            <option value="1650€">1KG - 1650€</option>
+        </select>
+        <button class="btn btn-secondary" onclick="showSummary('🍫HASH🍁 REAL-MADSHIT🍫🍁', '', document.getElementById('real-madshit-price').value)">Commander</button>
+    </div>
+
+    <div class="service-card">
+        <i class="fas fa-gorilla fa-3x"></i>
+        <h3>🦍 AMNESIA GORILLA 🦍</h3>
+        <label for="amnesia-gorilla-price">Choisissez une option :</label>
+        <select id="amnesia-gorilla-price" class="price-select">
+            <option value="70€">10G - 70€</option>
+            <option value="120€">20G - 120€</option>
+            <option value="220€">50G - 220€</option>
+            <option value="400€">100G - 400€</option>
+        </select>
+        <button class="btn btn-secondary" onclick="showSummary('🦍 AMNESIA GORILLA 🦍', '', document.getElementById('amnesia-gorilla-price').value)">Commander</button>
+    </div>
+
+    <div class="service-card">
+        <i class="fas fa-fingerprint fa-3x"></i>
+        <h3>STICKY FINGERS 🇲🇦</h3>
+        <label for="sticky-fingers-price">Choisissez une option :</label>
+        <select id="sticky-fingers-price" class="price-select">
+            <option value="100€">10G - 100€</option>
+            <option value="180€">25G - 180€</option>
+            <option value="300€">50G - 300€</option>
+            <option value="550€">100G - 550€</option>
+            <option value="2200€">500G - 2200€</option>
+            <option value="4200€">1KG - 4200€</option>
+        </select>
+        <button class="btn btn-secondary" onclick="showSummary('STICKY FINGERS 🇲🇦', '', document.getElementById('sticky-fingers-price').value)">Commander</button>
+    </div>
+
+    <div class="service-card">
+        <i class="fas fa-rainbow fa-3x"></i>
+        <h3>Zkittlez 🌈🍭🍬</h3>
+        <label for="zkittlez-price">Choisissez une option :</label>
+        <select id="zkittlez-price" class="price-select">
+            <option value="110€">10G - 110€</option>
+            <option value="200€">20G - 200€</option>
+            <option value="400€">50G - 400€</option>
+            <option value="750€">100G - 750€</option>
+            <option value="1400€">200G - 1400€</option>
+            <option value="3250€">500G - 3250€</option>
+            <option value="6000€">1KG - 6000€</option>
+        </select>
+        <button class="btn btn-secondary" onclick="showSummary('Zkittlez 🌈🍭🍬', '', document.getElementById('zkittlez-price').value)">Commander</button>
+    </div>
+
+    <div class="service-card">
+        <i class="fas fa-leaf fa-3x"></i>
+        <h3>🇪🇸 🌿 TOP WEED SPAIN 🌿 🇪🇸</h3>
+        <label for="top-weed-spain-price">Choisissez une option :</label>
+        <select id="top-weed-spain-price" class="price-select">
+            <option value="50€">5G - 50€</option>
+            <option value="90€">10G - 90€</option>
+            <option value="200€">25G - 200€</option>
+            <option value="370€">50G - 370€</option>
+            <option value="680€">100G - 680€</option>
+        </select>
+        <button class="btn btn-secondary" onclick="showSummary('🇪🇸 🌿 TOP WEED SPAIN 🌿 🇪🇸', '', document.getElementById('top-weed-spain-price').value)">Commander</button>
+    </div>
+
+    <div class="service-card">
+        <i class="fas fa-gift fa-3x"></i>
+        <h3>🎁MDMA 🪨</h3>
+        <label for="mdma-price">Choisissez une option :</label>
+        <select id="mdma-price" class="price-select">
+            <option value="100€">3G - 100€</option>
+            <option value="250€">10G - 250€</option>
+        </select>
+        <button class="btn btn-secondary" onclick="showSummary('🎁MDMA 🪨', '', document.getElementById('mdma-price').value)">Commander</button>
+    </div>
+
+    <div class="service-card">
+        <i class="fas fa-chocolate-bar fa-3x"></i>
+        <h3>MOUSSE TWIX🔑🍫</h3>
+        <label for="mousse-twix-price">Choisissez une option :</label>
+        <select id="mousse-twix-price" class="price-select">
+            <option value="130€">50G - 130€</option>
+            <option value="250€">100G - 250€</option>
+            <option value="490€">200G - 490€</option>
+            <option value="1150€">500G - 1150€</option>
+            <option value="2200€">1000G - 2200€</option>
+        </select>
+        <button class="btn btn-secondary" onclick="showSummary('MOUSSE TWIX🔑🍫', '', document.getElementById('mousse-twix-price').value)">Commander</button>
+    </div>
+    
+        <!-- Ajoutez ici les autres produits de manière similaire -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Section de commande -->
+  <section id="order" class="order">
+    <div class="container">
+      <h2>Résumé de votre commande</h2>
+      <div id="order-summary" class="order-summary">
+        <p>Sélectionnez un service pour voir le résumé ici.</p>
+      </div>
+      <p>Pour commander :</p>
+      <ol>
+        <li>Faites une capture d'écran de cette section de la page.</li>
+        <li>Envoyez la capture d'écran à l'un des contacts ci-dessous :</li>
+      </ol>
+      <p><strong>⚠️ Veuillez contacter uniquement si c'est pour une commande. Merci !</strong></p>
+      <div class="contact-methods">
+        <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp :</strong> <a href="https://wa.me/447943800251" target="_blank">Cliquez ici</a></p>
+        <p><i class="fab fa-telegram"></i> <strong>Telegram :</strong> <a href="https://t.me/Speedpaypal1" target="_blank">Cliquez ici</a></p>
+        <p><i class="fab fa-snapchat"></i> <strong>Snapchat :</strong> <a href="https://www.snapchat.com/add/speedpaypal3" target="_blank">Cliquez ici</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Mafia PRODUITS. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- Script JavaScript -->
+  <script>
+    /**
+     * Affiche le résumé du service sélectionné dans la section "Résumé de votre commande".
+     * @param {string} title - Le titre du service.
+     * @param {string} description - La description du service.
+     * @param {string} price - Le prix du service.
+     */
+    function showSummary(title, description, price) {
+      const summaryDiv = document.getElementById('order-summary');
+      summaryDiv.innerHTML = `
+        <h3>${title}</h3>
+        <p>${description}</p>
+        <p><strong>Prix :</strong> ${price}</p>
+      `;
+      // Scrolle automatiquement vers la section de commande
+      document.getElementById('order').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
